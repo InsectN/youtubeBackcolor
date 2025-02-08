@@ -1,0 +1,15 @@
+{
+    "name"              : "Youtubeのコントロールを暗くする",
+    "version"           : "1.1.0",
+    "manifest_version"  : 3,
+    "description"       : "Youtubeのコントロール背景色を濃くし、白文字を見やすくする（特にブラウザの強制ダークモード実行時）",
+    "content_scripts"   : [{
+        "matches": ["https://*.youtube.com/*"],
+        "js": [
+            "content.js"
+        ]
+    }],
+    "icons": {
+        "128": "icon128.png"
+    }
+}
